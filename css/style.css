@@ -10,6 +10,19 @@
   --modal-overlay-color: #2e2f4266;
   --hero-background-color: #2e2f42b2;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -86,7 +99,18 @@ body {
 .section-hero {
   background-color: var(--dark-color);
 }
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* ----------------------------del--------- */
+  outline: 2px solid red;
+}
 .hero-title {
+  padding-top: 188px;
+  padding-bottom: 48px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -94,6 +118,12 @@ body {
   color: #ffffff;
 }
 .hero-btn {
+  /* box-sizing: inherit; */
+  border: none;
+  margin-bottom: 188px;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 16px 32px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -108,6 +138,7 @@ body {
 }
 /* -------------------------------section 1 -----------------------------*/
 .features-subtitle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -122,6 +153,7 @@ body {
 }
 /* --------------------------------section 2---------------------------------- */
 .doing-title {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -129,11 +161,18 @@ body {
   text-transform: capitalize;
   color: var(--dark-color);
 }
+.doing-item img {
+  display: block;
+}
 /* ------------------------------------section 3 ---------------------------- */
 .section-team {
   background-color: var(--light-color);
 }
+.team-item img {
+  margin-bottom: 32px;
+}
 .team-title {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -142,6 +181,7 @@ body {
   color: var(--dark-color);
 }
 .team-subtitle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -159,6 +199,7 @@ body {
   background-color: var(--dark-color);
 }
 .footer-logo {
+  margin-bottom: 16px;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   font-weight: 800;
@@ -191,6 +232,9 @@ body {
   background-color: var(--light-color);
   color: var(--primaryBrand-color);
 }
+.portfolio-btns {
+  display: inline;
+}
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: #ffffff;
@@ -199,7 +243,11 @@ body {
 .portfolio-link {
   text-decoration: none;
 }
+.portfolio-item img {
+  margin-bottom: 32px;
+}
 .portfolio-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
