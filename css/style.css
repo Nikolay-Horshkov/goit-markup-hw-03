@@ -9,6 +9,7 @@
   --light-color: #f4f4fd;
   --modal-overlay-color: #2e2f4266;
   --hero-background-color: #2e2f42b2;
+  --background-color: #e5e5e5;
 }
 p,
 h1,
@@ -90,6 +91,8 @@ img {
   display: flex;
 }
 .nav-link {
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
@@ -106,6 +109,8 @@ img {
   color: var(--pressed-state-color);
 }
 .mail {
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-style: normal;
   text-decoration: none;
   font-size: 16px;
@@ -117,6 +122,8 @@ img {
   color: var(--pressed-state-color);
 }
 .phone {
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-left: 40px;
   font-style: normal;
   text-decoration: none;
@@ -126,7 +133,7 @@ img {
   color: var(--text-color);
 }
 .main {
-  background: #e5e5e5;
+  background: #ffffff;
 }
 /* ---------------------------------hero --------------------------------*/
 .section-hero {
@@ -296,6 +303,9 @@ img {
 }
 /* ----------------- P O R T F O L I O ------------------------------ */
 .portfolio-btn {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  padding: 12px 24px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -307,8 +317,18 @@ img {
   background-color: var(--light-color);
   color: var(--primaryBrand-color);
 }
+.container-btns {
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+.portfolio-title-mix {
+  border: 1px solid var(--accent-color);
+  padding: 32px 0 32px 16px;
+}
 .portfolio-btns {
-  display: inline;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -318,8 +338,8 @@ img {
 .portfolio-link {
   text-decoration: none;
 }
-.portfolio-item img {
-  margin-bottom: 32px;
+.portfolio-item {
+  background: #ffffff;
 }
 .portfolio-title {
   margin-bottom: 8px;
@@ -336,8 +356,17 @@ img {
   color: var(--text-color);
 }
 .portfolio-text {
+  display: none;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-color);
+}
+.portfolio-list {
+  display: flex;
+  padding-bottom: 120px;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  flex-basis: calc((100%-48px) / 3);
 }
