@@ -37,9 +37,9 @@ img {
 }
 .hidden {
   position: absolute;
-  white-space: nowrap;
   width: 1px;
   height: 1px;
+  white-space: nowrap;
   overflow: hidden;
   border: 0;
   padding: 0;
@@ -48,11 +48,11 @@ img {
   margin: -1px;
 }
 .logo {
+  line-height: 1.33;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--dark-color);
@@ -145,8 +145,7 @@ img {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  /* ----------------------------del--------- */
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 .hero-title {
   padding-top: 188px;
@@ -162,7 +161,6 @@ img {
 }
 .hero-btn {
   border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
   display: block;
   border-radius: 4px;
@@ -172,6 +170,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: #ffffff;
   background-color: var(--primaryBrand-color);
 }
@@ -195,7 +194,7 @@ img {
   padding-bottom: 120px;
 }
 .features-item {
-  flex-basis: calc((100%-72px) / 4);
+  flex-basis: calc(100% / 4 - 72px);
 }
 .features-text {
   font-size: 16px;
@@ -222,7 +221,7 @@ img {
 }
 
 .doing-list .doing-item {
-  flex-basis: calc((100%-48px) / 3);
+  flex-basis: calc(100% / 3 - 48px);
 }
 .doing-item img {
   display: block;
@@ -238,7 +237,7 @@ img {
 .team-list {
   display: flex;
   gap: 24px;
-  flex-basis: calc((100%-72px) / 4);
+  flex-basis: calc(100% / 4 - 72px);
 }
 .team-item {
   background-color: #ffffff;
